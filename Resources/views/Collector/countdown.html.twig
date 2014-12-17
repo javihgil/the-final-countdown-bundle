@@ -1,0 +1,30 @@
+{% extends 'WebProfilerBundle:Profiler:layout.html.twig' %}
+
+{% block toolbar %}
+    {# icon to show in toolbar #}
+    {% set icon %}
+        <img width="18" height="18" style="padding-top:6px;padding-bottom:4px;margin-right:-5px"/>
+        <span class="sf-toolbar-status sf-toolbar-status-{{ collector.toolbarStatusColor }}">
+            {{ collector.toolbarText }}
+        </span>
+    {% endset %}
+
+    {% include 'WebProfilerBundle:Profiler:toolbar_item.html.twig' with { 'link': 'countdown' } %}
+{% endblock %}
+
+{#{% block header %}#}
+    {#{{ parent() }}#}
+{#{% endblock header %}#}
+
+{#&#123;&#35; PROFILER SIDEBAR MENU &#35;&#125;#}
+{#{% block menu %}#}
+    {#<span class="label">#}
+        {#&#123;&#35;<span class="icon"><img src="" /></span>&#35;&#125;#}
+        {#<strong>Countdown</strong>#}
+    {#</span>#}
+{#{% endblock %}#}
+
+{#&#123;&#35; PROFILER PANEL PAGE &#35;&#125;#}
+{#{% block panel %}#}
+    {#<h2>The Final Countdown</h2>#}
+{#{% endblock %}#}

@@ -1,0 +1,10 @@
+{
+    "name": "javihgil/the-final-countdown-bundle",
+    "version": "0.0.1-dev",
+    "type": "bundle",
+    "autoload": {
+        "psr-4": {
+            "Jhg\\TheFinalCountdownBundle\\": ""
+        }
+    }
+}

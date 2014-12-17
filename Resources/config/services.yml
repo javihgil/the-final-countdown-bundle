@@ -1,0 +1,7 @@
+services:
+    data_collector.partner:
+        class: Jhg\TheFinalCountdownBundle\DataCollector\CountdownDataCollector
+        arguments: ['@service_container']
+        tags:
+            - { name: data_collector, template: "JhgTheFinalCountdownBundle:Collector:countdown.html.twig", id: "countdown" }
+
